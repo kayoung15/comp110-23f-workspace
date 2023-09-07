@@ -36,6 +36,6 @@ if word_string[4] == single_character:
 
 """Counting Matching Indices"""
 if int(num_of_char) == 0:
-    print ("No instances of" + single_character + " found in" + five_character_word)
+    print ("No instances of " + single_character + " found in " + five_character_word)
 else:
     print (str(num_of_char) + " instances of " + single_character + " found in " + five_character_word)
