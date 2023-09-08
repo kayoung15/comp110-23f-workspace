@@ -9,7 +9,7 @@ if len(five_character_word) != 5:
     print ("Error: Word must contain 5 characters.")
     exit ()
 
-single_character: str = input("Enter a single character word: ")
+single_character: str = input("Enter a single character: ")
 if len(single_character) != 1:
     print ("Error: Character must be a single character.")
     exit ()
@@ -45,5 +45,9 @@ if word_string[4] == single_character:
 """Counting Matching Indices"""
 if int(number_of_character) == 0:
     print ("No instances of " + single_character + " found in " + five_character_word)
-else:
+
+if int(number_of_character) == 1:
+    print (str(number_of_character) + " instance of " + single_character + " found in " + five_character_word)
+    
+if int(number_of_character) > 1:
     print (str(number_of_character) + " instances of " + single_character + " found in " + five_character_word)
