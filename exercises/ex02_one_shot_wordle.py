@@ -16,19 +16,17 @@ guess: str = str(input("What is your 6-letter guess? "))
 # Response to Player Input
 while len(guess) != len(secret_word):
     guess = str(input("That was not 6 letters! Try again: "))
-    
+
 # Checking Indices for Correct Matches
 if guess != secret_word:  
-    
     # Establishing Variables for Check
     guess_idx = 0
     result = str("")
-
+    
     # Establishing the Check Loop
     while guess_idx < len(secret_word) or guess_idx > len(secret_word):
         guess_check = guess[guess_idx]
         secret_word_check = secret_word[guess_idx]
-
         # Boolean variable to keep track of whether the guessed character exists anywhere else in the word 
         guessed_char_exists = False
         # Variable to keep track of the alternate indices of the secret word you are checking for a match
@@ -52,7 +50,6 @@ if guess != secret_word:
         
     print("Not quite. Play again soon! ")
     print(result)
-    exit()
 
 # Guess equals Secret Word
 if guess == secret_word:
